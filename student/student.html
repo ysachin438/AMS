@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Cloud-Based Attendance System</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <h1>Cloud-Based Attendance Management System</h1>
+    <!-- Student DashBoard -->
+    <section>
+        <nav class="navbar">
+            <div class="logo">Student Dashboard</div>
+            <ul>
+                <li><a href="#attendance-overview">Attendance Overview</a></li>
+                <li><a href="#result">Results</a></li>
+                <li><a href="#notification">Notifications</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Your Profile</h2>
+            <div class ="profile"></div>
+        </section>
+        <section>
+            <h2>Attendance Overview</h2>
+            <div class="attendance-overview">
+                <?php include 'attendance.php'; ?>
+            </div>
+        </section>
+        <section>
+            <h2>Results</h2>
+            <div class ="results" ></div>
+        </section>
+    </section>
+</body>
+</html>

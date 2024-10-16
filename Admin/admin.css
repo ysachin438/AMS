@@ -1,0 +1,281 @@
+/* General Styles
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.stats-overview {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.user-management, .class-management {
+    margin: 20px 0;
+}
+
+.user-management form, .class-management form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.user-management form label, .class-management form label {
+    margin-bottom: 5px;
+}
+
+.user-management form input, .class-management form input, .user-management form select, .class-management form button, .user-management form button {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.user-management form button, .class-management form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.user-management form button:hover, .class-management form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.admin-dashboard {
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.stats-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-management,
+.class-management {
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c598a;
+}
+
+.user-list table,
+.class-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.attendance-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.attendance-list th,
+.attendance-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.attendance-list th {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .stats-overview {
+        flex-direction: column;
+    }
+
+    .stats-overview .card {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

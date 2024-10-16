@@ -1,0 +1,236 @@
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #45a049;
+}
+
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.class-list table, .stats-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.class-list th, .class-list td, .stats-list th, .stats-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.class-list th, .stats-list th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.attendance-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.attendance-form label, .attendance-form input, .attendance-form select, .attendance-form button {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.attendance-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.attendance-form button:hover {
+    background-color: #45a049;
+}
+
+.stats-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.stats-list th, .stats-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.stats-list th {
+    background-color: #4CAF50;
+    color: white;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #2980b9;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+.teacher-dashboard {
+    padding: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.class-list-section,
+.attendance-section,
+.stats-section {
+    margin-bottom: 30px;
+}
+
+.class-list table,
+.stats-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.attendance-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c598a;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .class-list,
+    .attendance-form,
+    .stats-list {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Attendance System</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <!-- Teacher Dashboard -->
+    <section class="teacher-dashboard">
+        <nav class="navbar">
+            <div class="logo">Your Dashboard</div>
+            <ul>
+                <li><a href="#classes">My Classes</a></li>
+                <li><a href="#attendance">Mark Attendance</a></li>
+                <li><a href="#stats">View Stats</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Class List Section -->
+        <section id="classes" class="class-list-section">
+            <h2>My Classes</h2>
+            <div class="class-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class Name</th>
+                            <th>Number of Students</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="classTableBody">
+                        <!-- Classes will be dynamically loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Mark Attendance Section -->
+        <section id="attendance" class="attendance-section">
+            <h2>Mark Attendance</h2>
+            <div class="attendance-form">
+                <label for="selectClass">Select Class:</label>
+                <select id="selectClass">
+                    <!-- Classes options will be dynamically populated -->
+                </select>
+
+                <label for="studentRoll">Roll No:</label>
+                <input type="text" id="studentRoll" placeholder="Enter student name">
+
+                <label for="attendanceStatus">Attendance Status:</label>
+                <select id="attendanceStatus">
+                    <option value="present">Present</option>
+                    <option value="absent">Absent</option>
+                </select>
+
+                <button id="markAttendance">Mark Attendance</button>
+                <div id="attendanceMessage"></div>
+            </div>
+        </section>
+
+        <!-- View Stats Section -->
+        <section id="stats" class="stats-section">
+            <h2>Attendance Statistics</h2>
+            <div class="stats-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Total Days</th>
+                            <th>Days Present</th>
+                            <th>Attendance %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="statsTableBody">
+                        <!-- Statistics will be dynamically loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+
+    <script src="teacher.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Attendance System</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Admin Dashboard -->
+    <section class="admin-dashboard">
+        <nav class="navbar">
+            <div class="logo">Admin Dashboard</div>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#manageUsers">Manage Users</a></li>
+                <li><a href="#manageClasses">Manage Classes</a></li>
+                <li><a href="#viewAttendance">View Attendance</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dashboard Overview Section -->
+        <section id="dashboard" class="dashboard-section">
+            <h2>System Overview</h2>
+            <div class="stats-overview">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p id="totalUsers">120</p>
+                </div>
+                <div class="card">
+                    <h3>Total Classes</h3>
+                    <p id="totalClasses">5</p>
+                </div>
+                <div class="card">
+                    <h3>Attendance Today</h3>
+                    <p id="attendanceToday">100</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manage Users Section -->
+        <section id="manageUsers" class="manage-users-section">
+            <h2>Manage Users</h2>
+            <div class="user-management">
+                <h3>Add New User</h3>
+                <form id="addUserForm">
+                    <label for="userRole">Select Role:</label>
+                    <select id="userRole">
+                        <option value="professor">Professor</option>
+                        <option value="student">Student</option>
+                    </select>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                    <button type="submit" id = "adduserbtn">Add User</button>
+                    <div id="addUserMessage"></div>
+                </form>
+                
+                <h3>User List</h3>
+                <div class="user-list">
+                    <table id = "user-list1">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userTableBody">
+                            <!-- User list will be dynamically populated -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manage Classes Section -->
+        <section id="manageClasses" class="manage-classes-section">
+            <h2>Manage Classes</h2>
+            <div class="class-management">
+                <h3>Add New Class</h3>
+                <form id="addClassForm">
+                    <label for="className">Class Name:</label>
+                    <input type="text" id="className" required>
+                    <button type="submit" id="cbutton">Add Class</button>
+                    <div id="addClassMessage"></div>
+                </form>
+
+                <h3>Class List</h3>
+                <div class="class-list">
+                    <table id="class-list1">
+                        <thead>
+                            <tr>
+                                <th>Class Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="classTableBody">
+                            <!-- Class list will be dynamically populated -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- View Attendance Section -->
+        <section id="viewAttendance" class="view-attendance-section">
+            <h2>Attendance Records</h2>
+            <div class="attendance-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="attendanceTableBody">
+                        <!-- Attendance records will be dynamically populated -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>

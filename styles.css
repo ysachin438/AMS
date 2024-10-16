@@ -1,0 +1,194 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.hero-section {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.role-selection .role-btn {
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.role-btn:hover {
+    background-color: #ff4500;
+}
+/* Dashboard Styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333;
+}
+
+#capture {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#notification {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+/* Modal content styles */
+.modal-content {
+    background-color: #fff; 
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    width: 400px; 
+    animation: slideIn 0.3s ease; /* Animation for the modal */
+}
+
+/* Close button styles */
+.close {
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.close:hover,
+.close:focus {
+    color: #000; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+
+/* Heading styles */
+h2 {
+    color: #6C5CE7; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+/* Form styles */
+form {
+    display: flex; 
+    flex-direction: column; 
+}
+
+/* Label styles */
+label {
+    margin-bottom: 5px; 
+    color: #333; 
+    font-weight: 600; 
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"] {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+    font-size: 16px; 
+    transition: border-color 0.3s ease; 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #6C5CE7; 
+    outline: none; 
+}
+
+/* Button styles */
+button {
+    background-color: #6C5CE7; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #5a4db1; 
+}
+
+/* Message styles */
+#loginMessage {
+    margin-top: 15px; 
+    text-align: center; 
+    color: #e74c3c; 
+}

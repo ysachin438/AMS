@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Based Attendance System</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Cloud-Based Attendance Management</h1>
+            <div class="role-selection">
+                <button class="role-btn" id="adminLogin">Admin</button>
+                <button class="role-btn" id="teacherLogin">Teacher</button>
+                <button class="role-btn" id="studentLogin">Student</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login as <span id="roleName"></span></h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="loginMessage"></div>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="container" style="display:none;">
+        <h2>Welcome, <span id="userRole"></span></h2>
+        <div class="stats">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">50</p>
+            </div>
+            <div class="card">
+                <h3>Attendance Today</h3>
+                <p id="attendanceToday">35</p>
+            </div>
+            <div class="card">
+                <h3>Average Attendance</h3>
+                <p id="avgAttendance">70%</p>
+            </div>
+        </div>
+
+        <div id="notification"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
